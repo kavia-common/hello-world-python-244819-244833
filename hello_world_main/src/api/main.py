@@ -22,3 +22,11 @@ def greet():
     Greet endpoint that returns Hello.
     """
     return "Hello"
+
+@app.get("/bye")
+def bye():
+    """
+    PUBLIC_INTERFACE
+    Bye endpoint that returns Bye.
+    """
+    return "Bye"
