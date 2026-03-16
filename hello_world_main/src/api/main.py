@@ -14,3 +14,11 @@ app.add_middleware(
 @app.get("/")
 def health_check():
     return {"message": "Healthy"}
+
+@app.get("/greet")
+def greet():
+    """
+    PUBLIC_INTERFACE
+    Greet endpoint that returns Hello.
+    """
+    return "Hello"
